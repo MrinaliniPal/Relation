@@ -33,6 +33,9 @@ public class SignUp extends Activity {
             @Override
             public void onSuccess() {
                 Toast.makeText(SignUp.this, "Account Created Successfully.", Toast.LENGTH_SHORT).show();
+                Intent s=new Intent(SignUp.this,MainActivity.class);
+                startActivity(s);
+                finish();
             }
 
             @Override
